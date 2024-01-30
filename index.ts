@@ -62,7 +62,7 @@ async function main() {
       ) {
         /**
          * If you care about presence, emit RoommateSubscribed and RoommateUnsubscribed,
-         * but we won't send to client since they don't do anything about it
+         * but we won't send these messages to clients since they don't do anything about it
          * (and initial state might be a secret).
          */
 
