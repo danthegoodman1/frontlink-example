@@ -50,9 +50,9 @@ async function main() {
 
   // Set up connection event for new WebSocket connections
   wss.on("connection", (ws: IDWebsocket, request) => {
-    ws.id = randomUUID()
+    ws.id = randomUUID() // give the socket some unique ID
     ws.isAlive = true
-    sockets[ws.id] = ws
+    sockets[ws.id] = ws // store it in the index
     ws.on("message", (message) => {
       console.log(`Received message: ${message} from ws ${ws.id}`)
       const msgJson = JSON.parse(message.toString())
