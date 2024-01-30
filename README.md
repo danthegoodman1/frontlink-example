@@ -2,9 +2,13 @@
 
 Example for [frontlink](https://github.com/danthegoodman1/frontlink).
 
+## Running
+
 First:
 
 ```
+https://github.com/danthegoodman1/frontlink-example
+cd frontlink-example
 npm i
 ```
 
