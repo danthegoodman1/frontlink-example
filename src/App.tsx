@@ -4,7 +4,7 @@ import Page from "./Page"
 
 function App() {
   return (
-    <FrontlinkProvider api="ws://localhost:8080/ws">
+    <FrontlinkProvider debugLog={true} api="ws://localhost:8080/ws">
       <Page />
     </FrontlinkProvider>
   )
