@@ -26,6 +26,9 @@ export default function Page() {
           {/* <button onClick={() => setCount(count+1)}> */}
           count is {count}
         </button>
+        <button onClick={() => setCount.noEmit((count) => count + 1)}>
+          count is {count} (no emit)
+        </button>
         <button
           onClick={() => {
             dothing(3)
