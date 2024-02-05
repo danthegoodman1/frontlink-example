@@ -33,6 +33,13 @@ export default function Page() {
         >
           do thing
         </button>
+        <button
+          onClick={() => {
+            dothing.noEmit(3)
+          }}
+        >
+          do thing (no emit)
+        </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
