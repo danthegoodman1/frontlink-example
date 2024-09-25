@@ -67,6 +67,7 @@ async function main() {
          */
 
         // Send to all other roommates
+        console.log(msgJson.RoomID, rooms[msgJson.RoomID])
         for (const socketID of rooms[msgJson.RoomID]) {
           if (socketID !== ws.id) {
             // No reason to send back to emitting client, it will ignore it anyway
